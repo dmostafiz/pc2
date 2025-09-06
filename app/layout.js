@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Paid Creators 2",
+  title: "Thank You",
   description: "A platform for creators to monetize their content",
 };
 
