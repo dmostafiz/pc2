@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Thank You",
-  description: "A platform for creators to monetize their content",
+  title: "CONGRATULATIONS",
+  description: "You’ve just taken a bold step toward financial freedom. Now, you face a choice: keep learning at your own pace",
 };
 
 export default function RootLayout({ children }) {
