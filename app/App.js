@@ -562,7 +562,7 @@ export default function App() {
                                   </li>
                                   <li>
                                     <strong style={{ color: "black" }}>
-                                      Juno:
+                                      Juno: AI Marketing Mentor
                                     </strong>{" "}
                                     your AI mentor and coach (Elite only)
                                   </li>
@@ -788,9 +788,9 @@ export default function App() {
                               className="sub-heading-oAouIfaAr64 text-output csub-heading-oAouIfaAr64 noBorder radius0 none"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
-                              <div>
+                              {/* <div>
                                 <h2>($997 Value)</h2>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
 
@@ -876,9 +876,9 @@ export default function App() {
                               className="sub-heading-gl60i7e9DGL text-output csub-heading-gl60i7e9DGL noBorder radius0 none"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
-                              <div>
+                              {/* <div>
                                 <h2>($497 Value)</h2>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
 
@@ -961,9 +961,9 @@ export default function App() {
                               className="sub-heading-eoy4WKeTUct text-output csub-heading-eoy4WKeTUct noBorder radius0 none"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
-                              <div>
+                              {/* <div>
                                 <h2>($997 Value)</h2>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
 
@@ -1016,7 +1016,7 @@ export default function App() {
                                     width={200}
                                     height={200}
                                     style={{}}
-                                    src="/zuno.jpeg"
+                                    src="/zuno.png"
                                     alt=""
                                     className="radius0"
                                     data-animation-class=""
@@ -1032,11 +1032,11 @@ export default function App() {
                             className="c-heading c-wrapper"
                           >
                             <div
-                              className="heading-kzd_73fQv7 text-output cheading-kzd_73fQv7 noBorder radius0"
+                              className="text-left heading-kzd_73fQv7 text-output cheading-kzd_73fQv7 noBorder radius0"
                               data-animation-class=""
                             >
                               <div>
-                                <h1>. Juno: AI Mentor (Elite Only)</h1>
+                                <h1>Juno: AI Marketing Mentor</h1>
                               </div>
                             </div>
                           </div>
@@ -1049,9 +1049,9 @@ export default function App() {
                               className="sub-heading-vWgfxAQQZA text-output csub-heading-vWgfxAQQZA noBorder radius0 none"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
-                              <div>
+                              {/* <div>
                                 <h2>($1,497 Value)</h2>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
 
@@ -1159,7 +1159,7 @@ export default function App() {
                                     width={200}
                                     height={200}
                                     style={{}}
-                                    src="/images/7741d5ae-5d56-4d85-82e7-477b5732369c.png"
+                                    src="/5percent.png"
                                     alt=""
                                     className="img-none img-border-none img-effects-none"
                                     data-animation-class="animate__animated animate__fadeInUp"
@@ -1268,7 +1268,7 @@ export default function App() {
                                     width={200}
                                     height={200}
                                     style={{}}
-                                    src="/images/6844579af2331f6d5261e9d0.png"
+                                    src="/social.png"
                                     alt=""
                                     className="img-none img-border-none img-effects-none"
                                     data-animation-class="animate__animated animate__fadeInUp"
@@ -1378,7 +1378,7 @@ export default function App() {
                                     width={200}
                                     height={200}
                                     style={{}}
-                                    src="/images/6844579af2331f6d5261e9d0.png"
+                                    src="/discount.png"
                                     alt=""
                                     className="img-none img-border-none img-effects-none"
                                     data-animation-class="animate__animated animate__fadeInUp"
@@ -1968,10 +1968,10 @@ export default function App() {
                               data-animation-class=""
                             >
                               <div>
-                                <h2>
+                                {/* <h2>
                                   <strong>YOU’RE SAVING </strong>$X,XXX
                                   <strong>+ TODAY</strong>
-                                </h2>
+                                </h2> */}
                               </div>
                             </div>
                           </div>
@@ -1985,10 +1985,10 @@ export default function App() {
                               data-animation-class=""
                             >
                               <div>
-                                <p>
+                                {/* <p>
                                   Join [Insert Product Name] for
                                   $[Product&nbsp;Price]
-                                </p>
+                                </p> */}
                               </div>
                             </div>
                           </div>
@@ -2468,10 +2468,10 @@ export default function App() {
                               data-animation-class=""
                             >
                               <div>
-                                <h2>
+                                {/* <h2>
                                   <strong>YOU’RE SAVING </strong>$X,XXX
                                   <strong>+ TODAY</strong>
-                                </h2>
+                                </h2> */}
                               </div>
                             </div>
                           </div>
@@ -2485,10 +2485,10 @@ export default function App() {
                               data-animation-class=""
                             >
                               <div>
-                                <p>
+                                {/* <p>
                                   Join [Insert Product Name] for
                                   $[Product&nbsp;Price]
-                                </p>
+                                </p> */}
                               </div>
                             </div>
                           </div>
@@ -2686,38 +2686,7 @@ export default function App() {
                         id="col-6rrbtPtBdJXq"
                       >
                         <div className="none noBorder radius0 none bg bgCover vertical inner">
-                          <div
-                            id="paragraph-QHiFlhTGctR8"
-                            className="c-paragraph c-wrapper"
-                          >
-                            <div
-                              className="paragraph-QHiFlhTGctR8 text-output cparagraph-QHiFlhTGctR8 none noBorder radius0 none"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <p>[COMPANY LOGO]</p>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            id="paragraph-8xHmOPfPyWLn"
-                            className="c-paragraph c-wrapper"
-                          >
-                            <div
-                              className="paragraph-8xHmOPfPyWLn text-output cparagraph-8xHmOPfPyWLn none noBorder radius0 none"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <p>
-                                  Copyright © 2025 |
-                                  <strong> [COMPANY NAME]</strong> | All Rights
-                                  Reserved
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-
+             
                           <div
                             id="paragraph-1wmwnhlrOT_L"
                             className="c-paragraph c-wrapper"
