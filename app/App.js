@@ -3,6 +3,7 @@
 import Image from "next/image";
 import VideoPlayer from "./components/VideoPlayer";
 import { useSearchParams } from "next/navigation"
+import { useState } from "react";
 
 export default function App() {
 
@@ -33,6 +34,8 @@ export default function App() {
 
     window.location.href = `https://lastoption.join7now.com?token=${token}`
   }
+
+  const [secret, setSecret] = useState(null)
 
   async function createOrder() {
     const token = searchParams.get("token") // example: ?id=123
@@ -2748,6 +2751,18 @@ export default function App() {
           </div>
         </div>
       </div>
+
+
+
+      {(secret && searchParams.get('token')) && <div className="absolute h-screen w-screen bg-black/70 top-0 left-0 right-0 flex items-center justify-center p-5">
+        <div className="w-full max-w-xl min-h-[200px] bg-white p-5">
+
+        </div>
+      </div>}
+
+
+
     </div>
+
   );
 }
