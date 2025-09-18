@@ -1,8 +1,14 @@
+'use client'
+
 import Image from "next/image";
 import VideoPlayer from "./components/VideoPlayer";
+import { useSearchParams } from "next/navigation"
+
 export default function App() {
 
-    const videoJsOptions = {
+  const searchParams = useSearchParams()
+
+  const videoJsOptions = {
     controls: true,
     responsive: true,
     fluid: true,
@@ -16,7 +22,18 @@ export default function App() {
       },
     ],
   };
-  
+
+  function passElite() {
+    
+    const token = searchParams.get("token") // example: ?id=123
+
+    if (!token) {
+      return alert('Invalid token')
+    }
+
+    window.location.href = `https://lastoption.join7now.com?token=${token}`
+  }
+
   return (
     <div>
       <div className="bgCover bg-fixed" />
@@ -732,354 +749,354 @@ export default function App() {
                     </div>
                   </div>
 
-                 
+
 
                   <div className="grid md:grid-cols-2 gap-y-[120px] xs:gap-y-[185px] pt-[125px] pb-[20px] px-2.5">
-                     <div
-                        className="c-column c-wrapper col-rvTl1aCZlso"
-                        id="col-rvTl1aCZlso"
-                        style={{ width: "100%" }}
-                      >
-                        <div className="borderFull radius10 bg bgCover vertical inner">
+                    <div
+                      className="c-column c-wrapper col-rvTl1aCZlso"
+                      id="col-rvTl1aCZlso"
+                      style={{ width: "100%" }}
+                    >
+                      <div className="borderFull radius10 bg bgCover vertical inner">
+                        <div
+                          id="image-jU-TBbCpmbf"
+                          className="c-image c-wrapper image-jU-TBbCpmbf"
+                        >
                           <div
-                            id="image-jU-TBbCpmbf"
-                            className="c-image c-wrapper image-jU-TBbCpmbf"
+                            style={{ cursor: "pointer" }}
+                            className="image-container cimage-jU-TBbCpmbf"
                           >
-                            <div
-                              style={{ cursor: "pointer" }}
-                              className="image-container cimage-jU-TBbCpmbf"
-                            >
+                            <div>
                               <div>
-                                <div>
-                                  <Image
-                                    width={200}
-                                    height={200}
-                                    style={{}}
-                                    src="/system.jpeg"
-                                    alt=""
-                                    className="radius0"
-                                    data-animation-class=""
-                                    loading="lazy"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            id="heading-5PoMfS3yrky"
-                            className="c-heading c-wrapper"
-                          >
-                            <div
-                              className="heading-5PoMfS3yrky text-output cheading-5PoMfS3yrky noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <p>Your Done-for-You Business System </p>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div
-                            id="sub-heading-oAouIfaAr64"
-                            className="c-sub-heading c-wrapper"
-                          >
-                            <div
-                              className="sub-heading-oAouIfaAr64 text-output csub-heading-oAouIfaAr64 noBorder radius0 none"
-                              data-animation-class="animate__animated animate__fadeInUp"
-                            >
-                              {/* <div>
-                                <h2>($997 Value)</h2>
-                              </div> */}
-                            </div>
-                          </div>
-
-                          <div
-                            id="bulletList-f1RlxBj9f70"
-                            className="c-bullet-list c-wrapper"
-                          >
-                            <div
-                              className="bulletList-f1RlxBj9f70 text-output cbulletList-f1RlxBj9f70 noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <ul>
-                                  <li>
-                                    <p>
-                                      Launch instantly with your own landing
-                                      page
-                                    </p>
-                                  </li>
-                                  <li>
-                                    <p> Funnel and back office</p>
-                                  </li>
-                                  <li>
-                                    <p>No tech required</p>
-                                  </li>
-                                </ul>
+                                <Image
+                                  width={200}
+                                  height={200}
+                                  style={{}}
+                                  src="/system.jpeg"
+                                  alt=""
+                                  className="radius0"
+                                  data-animation-class=""
+                                  loading="lazy"
+                                />
                               </div>
                             </div>
                           </div>
                         </div>
+
+                        <div
+                          id="heading-5PoMfS3yrky"
+                          className="c-heading c-wrapper"
+                        >
+                          <div
+                            className="heading-5PoMfS3yrky text-output cheading-5PoMfS3yrky noBorder radius0"
+                            data-animation-class=""
+                          >
+                            <div>
+                              <p>Your Done-for-You Business System </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          id="sub-heading-oAouIfaAr64"
+                          className="c-sub-heading c-wrapper"
+                        >
+                          <div
+                            className="sub-heading-oAouIfaAr64 text-output csub-heading-oAouIfaAr64 noBorder radius0 none"
+                            data-animation-class="animate__animated animate__fadeInUp"
+                          >
+                            {/* <div>
+                                <h2>($997 Value)</h2>
+                              </div> */}
+                          </div>
+                        </div>
+
+                        <div
+                          id="bulletList-f1RlxBj9f70"
+                          className="c-bullet-list c-wrapper"
+                        >
+                          <div
+                            className="bulletList-f1RlxBj9f70 text-output cbulletList-f1RlxBj9f70 noBorder radius0"
+                            data-animation-class=""
+                          >
+                            <div>
+                              <ul>
+                                <li>
+                                  <p>
+                                    Launch instantly with your own landing
+                                    page
+                                  </p>
+                                </li>
+                                <li>
+                                  <p> Funnel and back office</p>
+                                </li>
+                                <li>
+                                  <p>No tech required</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                       </div>
+                    </div>
 
-                      <div
-                        className="c-column c-wrapper col-MEpPIjs0JDq"
-                        id="col-MEpPIjs0JDq"
-                        style={{ width: "100%" }}
-                      >
-                        <div className="borderFull radius10 bg bgCover vertical inner">
+                    <div
+                      className="c-column c-wrapper col-MEpPIjs0JDq"
+                      id="col-MEpPIjs0JDq"
+                      style={{ width: "100%" }}
+                    >
+                      <div className="borderFull radius10 bg bgCover vertical inner">
+                        <div
+                          id="image-h5bmMC9SXhq"
+                          className="c-image c-wrapper image-h5bmMC9SXhq"
+                        >
                           <div
-                            id="image-h5bmMC9SXhq"
-                            className="c-image c-wrapper image-h5bmMC9SXhq"
+                            style={{ cursor: "pointer" }}
+                            className="image-container cimage-h5bmMC9SXhq"
                           >
-                            <div
-                              style={{ cursor: "pointer" }}
-                              className="image-container cimage-h5bmMC9SXhq"
-                            >
+                            <div>
                               <div>
-                                <div>
-                                  <Image
-                                    width={200}
-                                    height={200}
-                                    style={{}}
-                                    src="/mastermind.jpeg"
-                                    alt=""
-                                    className="radius0"
-                                    data-animation-class=""
-                                    loading="lazy"
-                                  />
-                                </div>
+                                <Image
+                                  width={200}
+                                  height={200}
+                                  style={{}}
+                                  src="/mastermind.jpeg"
+                                  alt=""
+                                  className="radius0"
+                                  data-animation-class=""
+                                  loading="lazy"
+                                />
                               </div>
                             </div>
                           </div>
+                        </div>
 
+                        <div
+                          id="heading-1oonI8toa0G"
+                          className="c-heading c-wrapper"
+                        >
                           <div
-                            id="heading-1oonI8toa0G"
-                            className="c-heading c-wrapper"
+                            className="heading-1oonI8toa0G text-output cheading-1oonI8toa0G noBorder radius0"
+                            data-animation-class=""
                           >
-                            <div
-                              className="heading-1oonI8toa0G text-output cheading-1oonI8toa0G noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <h1>Weekly Affiliate Mastermind </h1>
-                              </div>
+                            <div>
+                              <h1>Weekly Affiliate Mastermind </h1>
                             </div>
                           </div>
+                        </div>
 
+                        <div
+                          id="sub-heading-gl60i7e9DGL"
+                          className="c-sub-heading c-wrapper"
+                        >
                           <div
-                            id="sub-heading-gl60i7e9DGL"
-                            className="c-sub-heading c-wrapper"
+                            className="sub-heading-gl60i7e9DGL text-output csub-heading-gl60i7e9DGL noBorder radius0 none"
+                            data-animation-class="animate__animated animate__fadeInUp"
                           >
-                            <div
-                              className="sub-heading-gl60i7e9DGL text-output csub-heading-gl60i7e9DGL noBorder radius0 none"
-                              data-animation-class="animate__animated animate__fadeInUp"
-                            >
-                              {/* <div>
+                            {/* <div>
                                 <h2>($497 Value)</h2>
                               </div> */}
-                            </div>
                           </div>
+                        </div>
 
+                        <div
+                          id="bulletList-RDTXSOqQSxh"
+                          className="c-bullet-list c-wrapper"
+                        >
                           <div
-                            id="bulletList-RDTXSOqQSxh"
-                            className="c-bullet-list c-wrapper"
+                            className="bulletList-RDTXSOqQSxh text-output cbulletList-RDTXSOqQSxh noBorder radius0"
+                            data-animation-class=""
                           >
-                            <div
-                              className="bulletList-RDTXSOqQSxh text-output cbulletList-RDTXSOqQSxh noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <ul>
-                                  <li>
-                                    <p>Live group coaching</p>
-                                  </li>
-                                  <li>
-                                    <p>Accountability </p>
-                                  </li>
-                                  <li>
-                                    <p>You never get stuck</p>
-                                  </li>
-                                </ul>
-                              </div>
+                            <div>
+                              <ul>
+                                <li>
+                                  <p>Live group coaching</p>
+                                </li>
+                                <li>
+                                  <p>Accountability </p>
+                                </li>
+                                <li>
+                                  <p>You never get stuck</p>
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
                       </div>
+                    </div>
 
-                      <div
-                        className="c-column c-wrapper col-F3Ea_ff0Im4"
-                        id="col-F3Ea_ff0Im4"
-                        style={{ width: "100%" }}
-                      >
-                        <div className="borderFull radius10 bg bgCover vertical inner">
+                    <div
+                      className="c-column c-wrapper col-F3Ea_ff0Im4"
+                      id="col-F3Ea_ff0Im4"
+                      style={{ width: "100%" }}
+                    >
+                      <div className="borderFull radius10 bg bgCover vertical inner">
+                        <div
+                          id="image-S8JW0YgH5dS"
+                          className="c-image c-wrapper image-S8JW0YgH5dS"
+                        >
                           <div
-                            id="image-S8JW0YgH5dS"
-                            className="c-image c-wrapper image-S8JW0YgH5dS"
+                            style={{ cursor: "pointer" }}
+                            className="image-container cimage-S8JW0YgH5dS"
                           >
-                            <div
-                              style={{ cursor: "pointer" }}
-                              className="image-container cimage-S8JW0YgH5dS"
-                            >
+                            <div>
                               <div>
-                                <div>
-                                  <Image
-                                    width={200}
-                                    height={200}
-                                    style={{}}
-                                    src="/coop.jpeg"
-                                    alt=""
-                                    className="radius0"
-                                    data-animation-class=""
-                                    loading="lazy"
-                                  />
-                                </div>
+                                <Image
+                                  width={200}
+                                  height={200}
+                                  style={{}}
+                                  src="/coop.jpeg"
+                                  alt=""
+                                  className="radius0"
+                                  data-animation-class=""
+                                  loading="lazy"
+                                />
                               </div>
                             </div>
                           </div>
+                        </div>
 
+                        <div
+                          id="heading-kgePGKj4rf-"
+                          className="c-heading c-wrapper"
+                        >
                           <div
-                            id="heading-kgePGKj4rf-"
-                            className="c-heading c-wrapper"
+                            className="heading-kgePGKj4rf- text-output cheading-kgePGKj4rf- noBorder radius0"
+                            data-animation-class=""
                           >
-                            <div
-                              className="heading-kgePGKj4rf- text-output cheading-kgePGKj4rf- noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <h1>Ad Co-Op Traffic </h1>
-                              </div>
+                            <div>
+                              <h1>Ad Co-Op Traffic </h1>
                             </div>
                           </div>
+                        </div>
 
+                        <div
+                          id="sub-heading-eoy4WKeTUct"
+                          className="c-sub-heading c-wrapper"
+                        >
                           <div
-                            id="sub-heading-eoy4WKeTUct"
-                            className="c-sub-heading c-wrapper"
+                            className="sub-heading-eoy4WKeTUct text-output csub-heading-eoy4WKeTUct noBorder radius0 none"
+                            data-animation-class="animate__animated animate__fadeInUp"
                           >
-                            <div
-                              className="sub-heading-eoy4WKeTUct text-output csub-heading-eoy4WKeTUct noBorder radius0 none"
-                              data-animation-class="animate__animated animate__fadeInUp"
-                            >
-                              {/* <div>
+                            {/* <div>
                                 <h2>($997 Value)</h2>
                               </div> */}
-                            </div>
                           </div>
+                        </div>
 
+                        <div
+                          id="bulletList-X5fVZ6wii5Y"
+                          className="c-bullet-list c-wrapper"
+                        >
                           <div
-                            id="bulletList-X5fVZ6wii5Y"
-                            className="c-bullet-list c-wrapper"
+                            className="bulletList-X5fVZ6wii5Y text-output cbulletList-X5fVZ6wii5Y noBorder radius0"
+                            data-animation-class=""
                           >
-                            <div
-                              className="bulletList-X5fVZ6wii5Y text-output cbulletList-X5fVZ6wii5Y noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <ul>
-                                  <li>
-                                    <p>We run ads</p>
-                                  </li>
-                                  <li>
-                                    <p>
-                                      {" "}
-                                      We send prospects straight to your funnel.
-                                    </p>
-                                  </li>
-                                  <li>
-                                    <p> Solves the #1 problem: Traffic.</p>
-                                  </li>
-                                </ul>
-                              </div>
+                            <div>
+                              <ul>
+                                <li>
+                                  <p>We run ads</p>
+                                </li>
+                                <li>
+                                  <p>
+                                    {" "}
+                                    We send prospects straight to your funnel.
+                                  </p>
+                                </li>
+                                <li>
+                                  <p> Solves the #1 problem: Traffic.</p>
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
                       </div>
+                    </div>
 
-                      <div
-                        className="c-column c-wrapper col-WRsJIxagMH"
-                        id="col-WRsJIxagMH"
-                        style={{ width: "100%" }}
-                      >
-                        <div className="borderFull radius10 bg bgCover vertical inner">
+                    <div
+                      className="c-column c-wrapper col-WRsJIxagMH"
+                      id="col-WRsJIxagMH"
+                      style={{ width: "100%" }}
+                    >
+                      <div className="borderFull radius10 bg bgCover vertical inner">
+                        <div
+                          id="image-RKZzdI6W6Q"
+                          className="c-image c-wrapper image-RKZzdI6W6Q"
+                        >
                           <div
-                            id="image-RKZzdI6W6Q"
-                            className="c-image c-wrapper image-RKZzdI6W6Q"
+                            style={{ cursor: "pointer" }}
+                            className="image-container cimage-RKZzdI6W6Q"
                           >
-                            <div
-                              style={{ cursor: "pointer" }}
-                              className="image-container cimage-RKZzdI6W6Q"
-                            >
+                            <div>
                               <div>
-                                <div>
-                                  <Image
-                                    width={200}
-                                    height={200}
-                                    style={{}}
-                                    src="/zuno.png"
-                                    alt=""
-                                    className="radius0"
-                                    data-animation-class=""
-                                    loading="lazy"
-                                  />
-                                </div>
+                                <Image
+                                  width={200}
+                                  height={200}
+                                  style={{}}
+                                  src="/zuno.png"
+                                  alt=""
+                                  className="radius0"
+                                  data-animation-class=""
+                                  loading="lazy"
+                                />
                               </div>
                             </div>
                           </div>
+                        </div>
 
+                        <div
+                          id="heading-kzd_73fQv7"
+                          className="c-heading c-wrapper"
+                        >
                           <div
-                            id="heading-kzd_73fQv7"
-                            className="c-heading c-wrapper"
+                            className="text-left heading-kzd_73fQv7 text-output cheading-kzd_73fQv7 noBorder radius0"
+                            data-animation-class=""
                           >
-                            <div
-                              className="text-left heading-kzd_73fQv7 text-output cheading-kzd_73fQv7 noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <h1>Juno: AI Marketing Mentor</h1>
-                              </div>
+                            <div>
+                              <h1>Juno: AI Marketing Mentor</h1>
                             </div>
                           </div>
+                        </div>
 
+                        <div
+                          id="sub-heading-vWgfxAQQZA"
+                          className="c-sub-heading c-wrapper"
+                        >
                           <div
-                            id="sub-heading-vWgfxAQQZA"
-                            className="c-sub-heading c-wrapper"
+                            className="sub-heading-vWgfxAQQZA text-output csub-heading-vWgfxAQQZA noBorder radius0 none"
+                            data-animation-class="animate__animated animate__fadeInUp"
                           >
-                            <div
-                              className="sub-heading-vWgfxAQQZA text-output csub-heading-vWgfxAQQZA noBorder radius0 none"
-                              data-animation-class="animate__animated animate__fadeInUp"
-                            >
-                              {/* <div>
+                            {/* <div>
                                 <h2>($1,497 Value)</h2>
                               </div> */}
-                            </div>
                           </div>
+                        </div>
 
+                        <div
+                          id="bulletList-kSNrHZQlIu"
+                          className="c-bullet-list c-wrapper"
+                        >
                           <div
-                            id="bulletList-kSNrHZQlIu"
-                            className="c-bullet-list c-wrapper"
+                            className="bulletList-kSNrHZQlIu text-output cbulletList-kSNrHZQlIu noBorder radius0"
+                            data-animation-class=""
                           >
-                            <div
-                              className="bulletList-kSNrHZQlIu text-output cbulletList-kSNrHZQlIu noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <ul>
-                                  <li>
-                                    <p>Learn faster, pass quizzes</p>
-                                  </li>
-                                  <li>
-                                    <p>Unlock cash codes</p>
-                                  </li>
-                                  <li>
-                                    <p>Qualify for weekly prizes</p>
-                                  </li>
-                                </ul>
-                              </div>
+                            <div>
+                              <ul>
+                                <li>
+                                  <p>Learn faster, pass quizzes</p>
+                                </li>
+                                <li>
+                                  <p>Unlock cash codes</p>
+                                </li>
+                                <li>
+                                  <p>Qualify for weekly prizes</p>
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
                       </div>
+                    </div>
 
 
                   </div>
@@ -1634,7 +1651,7 @@ export default function App() {
                                   <a
                                     target="_self"
                                     rel="noopener noreferrer"
-                                    href="https://example.com"
+                                    onClick={passElite}
                                   >
                                     No thanks — I’ll stay only in the $7
                                     Community and
@@ -1647,71 +1664,71 @@ export default function App() {
                           </div>
 
                           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 md:px-4 mt-10">
-                    <div className="bg-[#fff] flex flex-col justify-between gap-2 p-4 border-l-4 border-[#00C785]">
-                      <div id="heading-56K3Wd93JjI" class="c-heading c-wrapper">
-                        <div
-                          class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
-                          data-animation-class="animate__animated animate__fadeInUp"
-                        >
-                          <div>
-                            <p className="italic">
-                              To be able to step into my own online business
-                              from day 1 was incredible. I'm learning and
-                              earning and helping other stay-at-home moms do the
-                              same.
-                            </p>
+                            <div className="bg-[#fff] flex flex-col justify-between gap-2 p-4 border-l-4 border-[#00C785]">
+                              <div id="heading-56K3Wd93JjI" class="c-heading c-wrapper">
+                                <div
+                                  class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                                  data-animation-class="animate__animated animate__fadeInUp"
+                                >
+                                  <div>
+                                    <p className="italic">
+                                      To be able to step into my own online business
+                                      from day 1 was incredible. I'm learning and
+                                      earning and helping other stay-at-home moms do the
+                                      same.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <p className="w-fit self-end" style={{ color: "#00C785" }}>
+                                — Sarah F
+                              </p>
+                            </div>
+                            <div className="bg-[#fff] flex flex-col justify-between gap-2 p-4 border-l-4 border-[#00C785]" >
+                              <div id="heading-56K3Wd93JjI" class="c-heading c-wrapper">
+                                <div
+                                  class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                                  data-animation-class="animate__animated animate__fadeInUp"
+                                >
+                                  <div>
+                                    <p className="italic">
+                                      I have never seen a program like this where they
+                                      actually help you build your business by sending
+                                      leads and traffic to your landing page. That extra
+                                      boost makes a world of difference
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <p className="w-fit self-end" style={{ color: "#00C785" }}>
+                                — Timothy H
+                              </p>
+                            </div>
+                            <div className="bg-[#fff] flex flex-col justify-between gap-2 p-4 border-l-4 border-[#00C785]">
+                              <div id="heading-56K3Wd93JjI" class="c-heading c-wrapper">
+                                <div
+                                  class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                                  data-animation-class="animate__animated animate__fadeInUp"
+                                >
+                                  <div>
+                                    <p className="italic">
+                                      You get so excited about the trainings that it's
+                                      impossible not to tell everyone about it. I made
+                                      $294 in 3 days just sharing what I learned the day
+                                      before. This is so simple
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <p className="w-fit self-end" style={{ color: "#00C785" }}>
+                                — Wanda L
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <p className="w-fit self-end" style={{ color: "#00C785" }}>
-                        — Sarah F
-                      </p>
-                    </div>
-                    <div className="bg-[#fff] flex flex-col justify-between gap-2 p-4 border-l-4 border-[#00C785]" >
-                      <div id="heading-56K3Wd93JjI" class="c-heading c-wrapper">
-                        <div
-                          class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
-                          data-animation-class="animate__animated animate__fadeInUp"
-                        >
-                          <div>
-                            <p className="italic">
-                              I have never seen a program like this where they
-                              actually help you build your business by sending
-                              leads and traffic to your landing page. That extra
-                              boost makes a world of difference
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <p className="w-fit self-end" style={{ color: "#00C785" }}>
-                        — Timothy H
-                      </p>
-                    </div>
-                    <div className="bg-[#fff] flex flex-col justify-between gap-2 p-4 border-l-4 border-[#00C785]">
-                      <div id="heading-56K3Wd93JjI" class="c-heading c-wrapper">
-                        <div
-                          class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
-                          data-animation-class="animate__animated animate__fadeInUp"
-                        >
-                          <div>
-                            <p className="italic">
-                              You get so excited about the trainings that it's
-                              impossible not to tell everyone about it. I made
-                              $294 in 3 days just sharing what I learned the day
-                              before. This is so simple
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <p className="w-fit self-end" style={{ color: "#00C785" }}>
-                        — Wanda L
-                      </p>
-                    </div>
-                  </div>
-                        </div>
-                      </div>
-                      
-                      
+
+
 
                     </div>
                   </div>
@@ -2074,7 +2091,7 @@ export default function App() {
                                   <a
                                     target="_self"
                                     rel="noopener noreferrer"
-                                    href="https://example.com"
+                                    onClick={passElite}
                                   >
                                     No thanks—I’ll pass
                                   </a>
@@ -2319,7 +2336,7 @@ export default function App() {
                             </div>
                           </div>
 
-                         
+
 
                           <div
                             id="button-n8sC4akjPY"
@@ -2403,7 +2420,7 @@ export default function App() {
                                   <a
                                     target="_self"
                                     rel="noopener noreferrer"
-                                    href="https://example.com"
+                                    onClick={passElite}
                                   >
                                     No thanks<em> </em>
                                     I’ll stay only in the $7 Community
@@ -2591,7 +2608,7 @@ export default function App() {
                                   <a
                                     target="_self"
                                     rel="noopener noreferrer"
-                                    href="https://example.com"
+                                    onClick={passElite}
                                   >
                                     No thanks—I’ll pass
                                   </a>
@@ -2686,7 +2703,7 @@ export default function App() {
                         id="col-6rrbtPtBdJXq"
                       >
                         <div className="none noBorder radius0 none bg bgCover vertical inner">
-             
+
                           <div
                             id="paragraph-1wmwnhlrOT_L"
                             className="c-paragraph c-wrapper"
