@@ -1213,9 +1213,9 @@ export default function App() {
                               className="sub-heading-Cyyv-Pc0BX- text-output csub-heading-Cyyv-Pc0BX- noBorder radius0 none"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
-                              <div>
+                              {/* <div>
                                 <h2>(Value: Priceless)</h2>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
 
@@ -1322,9 +1322,9 @@ export default function App() {
                               className="sub-heading-dvoGBNm_3yd text-output csub-heading-dvoGBNm_3yd noBorder radius0 none"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
-                              <div>
+                              {/* <div>
                                 <h2>($997 Value)</h2>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
 
@@ -1432,9 +1432,9 @@ export default function App() {
                               className="sub-heading-1M-zHxRa6ol text-output csub-heading-1M-zHxRa6ol noBorder radius0 none"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
-                              <div>
+                              {/* <div>
                                 <h2> ($500+ Value)</h2>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
 
@@ -1526,9 +1526,9 @@ export default function App() {
                               className="heading-3pLytwSqWR5 text-output cheading-3pLytwSqWR5 noBorder radius0 none"
                               data-animation-class=""
                             >
-                              <div>
+                              {/* <div>
                                 <h1>$49/month </h1>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
 
