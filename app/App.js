@@ -462,7 +462,7 @@ export default function App() {
                                     width={200}
                                     height={200}
                                     style={{}}
-                                    src="/images/0b01f78f-668f-4c6d-9b74-048126b8d5ce.png"
+                                    src="/commissions.jpeg"
                                     alt=""
                                     className="img-none img-border-none img-effects-none"
                                     data-animation-class=""
@@ -711,7 +711,7 @@ export default function App() {
                               style={{ cursor: "default" }}
                               className="image-container cimage-E9GNuLtD6At"
                             >
-                              <div>
+                              {/* <div>
                                 <div>
                                   <Image
                                     width={200}
@@ -724,7 +724,7 @@ export default function App() {
                                     loading="lazy"
                                   />
                                 </div>
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
@@ -755,7 +755,7 @@ export default function App() {
                                     width={200}
                                     height={200}
                                     style={{}}
-                                    src="/images/684451d6374ef27ae4edfcf0.png"
+                                    src="/system.jpeg"
                                     alt=""
                                     className="radius0"
                                     data-animation-class=""
@@ -843,7 +843,7 @@ export default function App() {
                                     width={200}
                                     height={200}
                                     style={{}}
-                                    src="/images/9b460179-485f-47db-bc8f-6befa4d72373.png"
+                                    src="/mastermind.jpeg"
                                     alt=""
                                     className="radius0"
                                     data-animation-class=""
@@ -928,7 +928,7 @@ export default function App() {
                                     width={200}
                                     height={200}
                                     style={{}}
-                                    src="/images/684451d6374ef27ae4edfcf0.png"
+                                    src="/coop.jpeg"
                                     alt=""
                                     className="radius0"
                                     data-animation-class=""
@@ -1016,7 +1016,7 @@ export default function App() {
                                     width={200}
                                     height={200}
                                     style={{}}
-                                    src="/images/684451d6374ef27ae4edfcf0.png"
+                                    src="/zuno.jpeg"
                                     alt=""
                                     className="radius0"
                                     data-animation-class=""
