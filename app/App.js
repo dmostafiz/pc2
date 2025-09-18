@@ -1,5 +1,22 @@
 import Image from "next/image";
+import VideoPlayer from "./components/VideoPlayer";
 export default function App() {
+
+    const videoJsOptions = {
+    controls: true,
+    responsive: true,
+    fluid: true,
+    autoplay: true,
+    muted: true,
+    preload: "auto",
+    sources: [
+      {
+        src: "https://shop-xcelerate.s3.us-west-1.amazonaws.com/49landing.mp4",
+        type: "video/mp4", // This is key for HLS
+      },
+    ],
+  };
+  
   return (
     <div>
       <div className="bgCover bg-fixed" />
@@ -148,7 +165,7 @@ export default function App() {
                               data-v-9069ad15=""
                             >
                               <div data-v-9069ad15="" className="w-100">
-                                <div
+                                {/* <div
                                   data-v-9069ad15=""
                                   className="iframe-container"
                                   style={{ paddingBottom: "56.25%" }}
@@ -157,7 +174,8 @@ export default function App() {
                                     data-v-9069ad15=""
                                     className="video-icon"
                                   />
-                                </div>
+                                </div> */}
+                                <VideoPlayer options={videoJsOptions} />
                               </div>
                             </figure>
                           </div>
