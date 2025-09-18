@@ -24,7 +24,7 @@ export default function App() {
   };
 
   function passElite() {
-    
+
     const token = searchParams.get("token") // example: ?id=123
 
     if (!token) {
@@ -32,6 +32,21 @@ export default function App() {
     }
 
     window.location.href = `https://lastoption.join7now.com?token=${token}`
+  }
+
+  async function createOrder() {
+    const token = searchParams.get("token") // example: ?id=123
+
+    if (!token) {
+      return alert('Invalid token')
+    }
+
+
+
+
+
+    window.location.href = `https://lastoption.join7now.com?token=${token}`
+
   }
 
   return (
