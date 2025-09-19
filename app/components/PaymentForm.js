@@ -56,7 +56,7 @@ function CheckoutForm({ clientSecret, token }) {
 
         // alert("Payment successful!");
 
-        window.location.href = `https://uxlm.shopxcelerate.com/sso?token=${token}`
+        window.location.href = `https://uxlm.shopxcelerate.com/auth/sso?_verification_token=${token}`
 
 
       } else {
