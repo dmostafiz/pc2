@@ -72,8 +72,8 @@ function CheckoutForm({ clientSecret, token }) {
       <PaymentElement />
       {error && <p>{error}</p>}
 
-      <button type="submit" className="form-btn" data-v-bb614710="">
-        <span className="main-text" data-v-bb614710="">
+      <button type="submit" className="form-btn w-full bg-amber-600 py-2 !rounded-xl">
+        <span className="main-text text-white" data-v-bb614710="">
           {loading ? "Processing..." : "Join Now"}
         </span>
       </button>

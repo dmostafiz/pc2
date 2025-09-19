@@ -661,10 +661,10 @@ export default function App() {
 
                           <div
                             id="heading-56K3Wd93JjI"
-                            class="c-heading c-wrapper"
+                            className="c-heading c-wrapper"
                           >
                             <div
-                              class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                              className="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
                               <div>
@@ -679,10 +679,10 @@ export default function App() {
 
                           <div
                             id="heading-56K3Wd93JjI"
-                            class="c-heading c-wrapper"
+                            className="c-heading c-wrapper"
                           >
                             <div
-                              class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                              className="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
                               <div>
@@ -696,10 +696,10 @@ export default function App() {
 
                           <div
                             id="heading-56K3Wd93JjI"
-                            class="c-heading c-wrapper"
+                            className="c-heading c-wrapper"
                           >
                             <div
-                              class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                              className="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
                               <div>
@@ -718,10 +718,10 @@ export default function App() {
 
                           <div
                             id="heading-56K3Wd93JjI"
-                            class="c-heading c-wrapper"
+                            className="c-heading c-wrapper"
                           >
                             <div
-                              class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                              className="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
                               data-animation-class="animate__animated animate__fadeInUp"
                             >
                               <div>
@@ -1716,9 +1716,9 @@ export default function App() {
 
                           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 md:px-4 mt-10">
                             <div className="bg-[#fff] flex flex-col justify-between gap-2 p-4 border-l-4 border-[#00C785]">
-                              <div id="heading-56K3Wd93JjI" class="c-heading c-wrapper">
+                              <div id="heading-56K3Wd93JjI" className="c-heading c-wrapper">
                                 <div
-                                  class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                                  className="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
                                   data-animation-class="animate__animated animate__fadeInUp"
                                 >
                                   <div>
@@ -1736,9 +1736,9 @@ export default function App() {
                               </p>
                             </div>
                             <div className="bg-[#fff] flex flex-col justify-between gap-2 p-4 border-l-4 border-[#00C785]" >
-                              <div id="heading-56K3Wd93JjI" class="c-heading c-wrapper">
+                              <div id="heading-56K3Wd93JjI" className="c-heading c-wrapper">
                                 <div
-                                  class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                                  className="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
                                   data-animation-class="animate__animated animate__fadeInUp"
                                 >
                                   <div>
@@ -1756,9 +1756,9 @@ export default function App() {
                               </p>
                             </div>
                             <div className="bg-[#fff] flex flex-col justify-between gap-2 p-4 border-l-4 border-[#00C785]">
-                              <div id="heading-56K3Wd93JjI" class="c-heading c-wrapper">
+                              <div id="heading-56K3Wd93JjI" className="c-heading c-wrapper">
                                 <div
-                                  class="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
+                                  className="heading-56K3Wd93JjI text-output cheading-56K3Wd93JjI has-color noBorder radius0"
                                   data-animation-class="animate__animated animate__fadeInUp"
                                 >
                                   <div>
@@ -2792,12 +2792,12 @@ export default function App() {
 
       {(secret && searchParams.get('token')) && <div className="fixed h-screen w-screen bg-black/70 top-0 left-0 right-0 flex items-center justify-center p-5">
         <div className="w-full max-w-xl min-h-[200px] bg-white p-5 rounded-xl">
-          <div>
-            <h1>Subscribe Elite at $49 / Month</h1>
+          <div className="mb-5">
+            <h1 className="text-xl !font-bold">Join Elite at $49 / Month</h1>
           </div>
 
           <div className="w-full">
-            <PaymentForm clientSecret={secret} token={token} />
+            <PaymentForm clientSecret={secret} token={searchParams.get("token")} />
           </div>
         </div>
       </div>}
