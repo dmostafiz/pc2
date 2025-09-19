@@ -1985,39 +1985,14 @@ export default function App() {
                             id="heading-FjuGv3NXVCwD"
                             className="c-heading c-wrapper"
                           >
-                            <div
-                              className="heading-FjuGv3NXVCwD text-output cheading-FjuGv3NXVCwD noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <p>Now for only $XX</p>
-                              </div>
-                            </div>
+                   
                           </div>
 
                           <div
                             id="image-a5e8zT3HYpsJ"
                             className="c-image c-wrapper image-a5e8zT3HYpsJ"
                           >
-                            <div
-                              style={{ cursor: "pointer" }}
-                              className="image-container cimage-a5e8zT3HYpsJ"
-                            >
-                              <div>
-                                <div>
-                                  <Image
-                                    width={200}
-                                    height={200}
-                                    style={{}}
-                                    src="/images/ad6717b3-3df4-422c-9cb2-9a34013b7030.png"
-                                    alt=""
-                                    className="radius0"
-                                    data-animation-class=""
-                                    loading="lazy"
-                                  />
-                                </div>
-                              </div>
-                            </div>
+              
                           </div>
 
                           <div
@@ -2487,40 +2462,10 @@ export default function App() {
                             id="heading-U1ZFpuXsok"
                             className="c-heading c-wrapper"
                           >
-                            <div
-                              className="heading-U1ZFpuXsok text-output cheading-U1ZFpuXsok noBorder radius0"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <p>Now for only $XX</p>
-                              </div>
-                            </div>
+                    
                           </div>
 
-                          <div
-                            id="image-se7UrczMU6"
-                            className="c-image c-wrapper image-se7UrczMU6"
-                          >
-                            <div
-                              style={{ cursor: "pointer" }}
-                              className="image-container cimage-se7UrczMU6"
-                            >
-                              <div>
-                                <div>
-                                  <Image
-                                    width={200}
-                                    height={200}
-                                    style={{}}
-                                    src="/images/ad6717b3-3df4-422c-9cb2-9a34013b7030.png"
-                                    alt=""
-                                    className="radius0"
-                                    data-animation-class=""
-                                    loading="lazy"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+             
 
                           <div
                             id="sub-heading-4x8XBfT_jg"
