@@ -1545,14 +1545,7 @@ export default function App() {
                             id="sub-heading-dUfpqF_9vMT"
                             className="c-sub-heading c-wrapper"
                           >
-                            <div
-                              className="sub-heading-dUfpqF_9vMT text-output csub-heading-dUfpqF_9vMT noBorder radius0 none"
-                              data-animation-class=""
-                            >
-                              <div>
-                                <h2>Total Real-World Value: $$5,485+</h2>
-                              </div>
-                            </div>
+                    
                           </div>
 
                           <div
