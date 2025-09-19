@@ -5,7 +5,7 @@ import VideoPlayer from "./components/VideoPlayer";
 import { useSearchParams } from "next/navigation"
 import { useEffect, useState } from "react";
 import PaymentForm from "./components/PaymentForm";
-import axios from "axios";
+import Axios from "@/Helpers/Axios";
 
 export default function App() {
 
@@ -52,7 +52,7 @@ export default function App() {
 
     setLoading(true)
 
-    const res = await axios.post('/uxlm/create-order-intent', {
+    const res = await Axios.post('/uxlm/create-order-intent', {
       amount: 49
     }, {
       headers: {
