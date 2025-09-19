@@ -53,9 +53,9 @@ export default function App() {
   }
 
 
-  useEffect(() => {
-    setSecret('sdfcsdfsdf')
-  }, [])
+  // useEffect(() => {
+  //   setSecret('sdfcsdfsdf')
+  // }, [])
 
   return (
     <div>
