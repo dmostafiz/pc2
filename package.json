@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^4.0.2",
+    "@stripe/stripe-js": "^7.9.0",
+    "axios": "^1.12.2",
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",

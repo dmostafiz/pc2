@@ -4,6 +4,8 @@ import Image from "next/image";
 import VideoPlayer from "./components/VideoPlayer";
 import { useSearchParams } from "next/navigation"
 import { useEffect, useState } from "react";
+import PaymentForm from "./components/PaymentForm";
+import axios from "axios";
 
 export default function App() {
 
@@ -37,7 +39,10 @@ export default function App() {
 
   const [secret, setSecret] = useState(null)
 
+  const [loading, setLoading] = useState()
+
   async function createOrder() {
+
     const token = searchParams.get("token") // example: ?id=123
 
     if (!token) {
@@ -45,10 +50,30 @@ export default function App() {
     }
 
 
+    setLoading(true)
 
+    const res = await axios.post('/uxlm/create-order-intent', {
+      amount: 49
+    }, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
 
+    if (res?.data?.ok) {
 
-    window.location.href = `https://lastoption.join7now.com?token=${token}`
+      // Cookies.set(res?.data?.intent?.client_secret)
+
+      setSecret(res?.data?.intent?.client_secret)
+
+    } else {
+
+      console.log('Join form Error: ', res?.data?.msg)
+      alert(res?.data?.msg)
+    }
+
+    setLoading(false)
+
 
   }
 
@@ -225,6 +250,7 @@ export default function App() {
                             className="c-button c-wrapper button-OcKUTnhFdub desktop-only"
                           >
                             <button
+                              onClick={createOrder}
                               data-animation-class=""
                               id="button-OcKUTnhFdub_btn"
                               style={{}}
@@ -301,6 +327,7 @@ export default function App() {
                             className="c-button c-wrapper button-MWIOmqbAiso mobile-only"
                           >
                             <button
+                              onClick={createOrder}
                               data-animation-class=""
                               id="button-MWIOmqbAiso_btn"
                               style={{}}
@@ -1593,6 +1620,7 @@ export default function App() {
                             className="c-button c-wrapper button-xmPuptC6U7"
                           >
                             <button
+                              onClick={createOrder}
                               data-animation-class=""
                               id="button-xmPuptC6U7_btn"
                               style={{}}
@@ -2038,6 +2066,7 @@ export default function App() {
                             className="c-button c-wrapper button-uZvBSt_g0dq-"
                           >
                             <button
+                              onClick={createOrder}
                               data-animation-class=""
                               id="button-uZvBSt_g0dq-_btn"
                               style={{}}
@@ -2366,6 +2395,7 @@ export default function App() {
                             className="c-button c-wrapper button-n8sC4akjPY"
                           >
                             <button
+                              onClick={createOrder}
                               data-animation-class=""
                               id="button-n8sC4akjPY_btn"
                               style={{}}
@@ -2555,6 +2585,7 @@ export default function App() {
                             className="c-button c-wrapper button-j48YiVxEoT"
                           >
                             <button
+                              onClick={createOrder}
                               data-animation-class=""
                               id="button-j48YiVxEoT_btn"
                               style={{}}
@@ -2761,7 +2792,13 @@ export default function App() {
 
       {(secret && searchParams.get('token')) && <div className="fixed h-screen w-screen bg-black/70 top-0 left-0 right-0 flex items-center justify-center p-5">
         <div className="w-full max-w-xl min-h-[200px] bg-white p-5 rounded-xl">
+          <div>
+            <h1>Subscribe Elite at $49 / Month</h1>
+          </div>
 
+          <div className="w-full">
+            <PaymentForm clientSecret={secret} token={token} />
+          </div>
         </div>
       </div>}
 
