@@ -210,12 +210,7 @@ export default function App() {
                             >
                               <div>
                                 <p>
-                                  You’ve just taken a bold step toward financial
-                                  freedom. Now, you face a choice: keep learning
-                                  at your own pace… or stay a student AND become
-                                  an Elite Affiliate — launching your own
-                                  business today and earning 50% upfront, 50%
-                                  monthly residuals, and 10% on your 2nd level.
+                                  You’ve just taken a bold step toward financial freedom. Now, you face a choice: keep learning at your own pace… or stay a student AND become an Elite Affiliate — launching your own business today and earning 50% upfront, 50% monthly residuals, discount travel and bonuses.
                                 </p>
                               </div>
                             </div>
@@ -1545,7 +1540,7 @@ export default function App() {
                             id="sub-heading-dUfpqF_9vMT"
                             className="c-sub-heading c-wrapper"
                           >
-                    
+
                           </div>
 
                           <div
@@ -1573,7 +1568,7 @@ export default function App() {
                               data-animation-class=""
                             >
                               <div>
-                                <p>TODAY'S GRANDFATHERED PRICE:</p>
+                                <p>TODAY'S GRANDFATHERED PRICE: $49</p>
                               </div>
                             </div>
                           </div>
@@ -1985,14 +1980,14 @@ export default function App() {
                             id="heading-FjuGv3NXVCwD"
                             className="c-heading c-wrapper"
                           >
-                   
+
                           </div>
 
                           <div
                             id="image-a5e8zT3HYpsJ"
                             className="c-image c-wrapper image-a5e8zT3HYpsJ"
                           >
-              
+
                           </div>
 
                           <div
@@ -2462,10 +2457,10 @@ export default function App() {
                             id="heading-U1ZFpuXsok"
                             className="c-heading c-wrapper"
                           >
-                    
+
                           </div>
 
-             
+
 
                           <div
                             id="sub-heading-4x8XBfT_jg"
