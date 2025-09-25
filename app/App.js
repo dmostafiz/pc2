@@ -2344,7 +2344,7 @@ export default function App() {
                             >
                               <div>
                                 <h1>
-                                  Stay a student. Or stay a student AND launch
+                                  Stay a student Or stay a student AND launch
                                   your business today.{" "}
                                 </h1>
                               </div>
