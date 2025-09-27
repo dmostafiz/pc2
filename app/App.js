@@ -34,7 +34,8 @@ export default function App() {
       return alert('Invalid token')
     }
 
-    window.location.href = `https://lastoption.join7now.com?token=${token}`
+    const redirectTo = process.env.REDIRECT_TO || 'https://lastoption.join7now.com'
+    window.location.href = `${redirectTo}?token=${token}`
   }
 
   const [secret, setSecret] = useState(null)
